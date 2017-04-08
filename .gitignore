@@ -4,3 +4,4 @@
 nodule_modules/
 dev/backup/
 dist/html/wp-content/uploads/
+node_modules/
