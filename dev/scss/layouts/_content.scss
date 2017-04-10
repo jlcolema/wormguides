@@ -4,6 +4,158 @@
 
 // Notes...
 
+/* Breadcrumbs
+--------------------------------------*/
+
+.title_container {
+
+	.container {}
+
+		.main-title {
+
+			a {
+
+				&:hover {}
+
+			}
+
+		}
+
+		.breadcrumbs {
+
+			.breadcrumb-trail {}
+
+				.trail-before {}
+
+					.breadcrumb-title {}
+
+				.trail-begin {
+
+					&:hover {}
+
+				}
+
+				span {
+
+					a {
+
+						&:hover {}
+
+					}
+
+				}
+
+				.sep {}
+
+				.trail-end {}
+
+		}
+
+}
+
+/* Layer Slider
+--------------------------------------*/
+
+#layer_slider_1 {
+
+	.ls-wp-container {}
+
+		.ls-inner {}
+
+			.ls-background-videos {}
+
+			.ls-slide-backgrounds {}
+
+			.ls-layers {
+
+				.ls-link {
+
+					&:hover {}
+
+				}
+
+				.ls-z {}
+
+					.ls-in-out {}
+
+						img {}
+
+						h3 {}
+
+						p {}
+
+			}
+
+		.ls-gui-element {}
+
+		.ls-loading-container {}
+
+			.ls-loading-indicator {}
+
+		.ls-shadow {}
+
+		.ls-bottom-nav-wrapper {}
+
+			.ls-nav-sideleft {}
+
+			.ls-bottom-slidebuttons {
+
+				a {
+
+					&:hover {}
+
+				}
+
+				.ls-nav-active {
+
+					&:hover {}
+
+				}
+
+			}
+
+			.ls-nav-sideright {}
+
+}
+
+/* Main
+--------------------------------------*/
+
+.container_wrap {
+
+	.container {}
+
+		.content {}
+
+			.post-entry {}
+
+				.entry-content-wrapper {}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

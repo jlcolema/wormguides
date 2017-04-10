@@ -7,39 +7,16 @@
 // Wrap
 // -------------------------------------
 
-.pre-header,
-.header,
-.content,
-.pre-footer,
-.footer {
+#wrap_all {}
 
-	@media screen and (min-width: 400px) {
+// Return to Top
+// -------------------------------------
 
-		padding: 0 20px;
+#scroll-top-link {
 
-	}
-
-	@media screen and (min-width: 800px) {
-
-		padding: 0 40px;
-
-	}
-
-	@media screen and (min-width: 1000px) {
-
-		padding: 0 60px;
-
-	}
+	.avia_hidden_link_text {}
 
 }
-
-	.wrap {
-
-		width: 100%;
-		max-width: 1020px;
-		margin: 0 auto;
-
-	}
 
 // Developer Mode
 // -------------------------------------

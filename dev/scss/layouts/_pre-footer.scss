@@ -3,3 +3,63 @@
 --------------------------------------*/
 
 // Notes...
+
+#footer {
+
+	.container {}
+
+		.flex-column {}
+
+			// Default widget
+
+			.widget {}
+
+				.widgettitle {}
+
+				.seperator {}
+
+			// Text-based widget
+
+			.widget_text {
+
+				.textwidget {}
+
+			}
+
+			// Categories Widget
+
+			.widget_categories {
+
+				ul {}
+
+					li {}
+
+						a {
+
+							&:hover {}
+
+						}
+
+			}
+
+			// Archive Widget
+
+			.widget_archive {
+
+				ul {}
+
+					li {}
+
+						a {
+
+							&:hover {}
+
+						}
+
+			}
+
+		.av_one_fourth {}
+
+		.first {}
+
+}
