@@ -269,7 +269,7 @@
 
 								@include mobile {
 
-									margin-bottom: 30px;
+									margin-bottom: 25px;
 									padding: 0;
 									background: $light-gray;
 
@@ -279,8 +279,9 @@
 
 									@include mobile {
 
+										margin-bottom: 0;
 										padding: 8px 10px;
-										// font-weight: bold;
+										font-size: 16px;
 										color: $white;
 										background: $primary-color;
 
@@ -365,6 +366,8 @@
 							// Image Container
 
 							.avia-image-container {
+
+								margin-bottom: 0;
 
 								.avia-image-container-inner {}
 
