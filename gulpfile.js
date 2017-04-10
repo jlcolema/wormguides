@@ -18,7 +18,7 @@ var sass = require('gulp-sass');
 
 var autoprefixer = require('gulp-autoprefixer');
 
-// var imagemin = require('gulp-imagemin');
+var imagemin = require('gulp-imagemin');
 
 var browsersync = require('browser-sync');
 
@@ -31,7 +31,7 @@ var basePaths = {
 
 	root: 'dist/html/wp-content/themes/enfold-child/',
 	src: 'dev/',
-	dest: 'dist/html/wp-content/themes/enfold-child/'
+	dest: 'dist/html/wp-content/themes/enfold-child/assets/'
 
 };
 
@@ -57,7 +57,7 @@ gulp.task('sass', function() {
 
 	}))
 
-	.pipe(gulp.dest(basePaths.dest))
+	.pipe(gulp.dest(basePaths.root))
 
 	.pipe(browsersync.stream());
 
@@ -101,21 +101,21 @@ gulp.task('sass', function() {
 
 // Notes...
 
-// gulp.task('img', function() {
+gulp.task('img', function() {
 
-// 	return gulp.src(basePaths.src + 'img/**/*')
+	return gulp.src(basePaths.src + 'img/**/*')
 
-// 	.pipe(imagemin({
+	.pipe(imagemin({
 
-// 		optimizationLevel: 5,
-// 		progressive: true,
-// 		interlaced: true
+		optimizationLevel: 5,
+		progressive: true,
+		interlaced: true
 
-// 	}))
+	}))
 
-// 	.pipe(gulp.dest(basePaths.dest + 'img'));
+	.pipe(gulp.dest(basePaths.dest + 'img'));
 
-// });
+});
 
 /* Fonts
 --------------------------------------*/
@@ -155,7 +155,7 @@ gulp.task('watch', function() {
 
 	// gulp.watch(basePaths.src + 'js/*.js', ['js']);
 
-	// gulp.watch(basePaths.src + 'img/**/*', ['img']);
+	gulp.watch(basePaths.src + 'img/**/*', ['img']);
 
 	// gulp.watch(basePaths.src + 'fonts/**/*', ['fonts']);
 
@@ -168,4 +168,4 @@ gulp.task('watch', function() {
 
 // Notes...
 
-gulp.task('default', ['sass', 'watch']);
+gulp.task('default', ['sass', 'img', 'watch']);

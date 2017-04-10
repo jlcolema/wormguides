@@ -1,0 +1,365 @@
+/*--------------------------------------
+   Baseline
+--------------------------------------*/
+
+// Notes...
+
+html {
+
+	// font-size: 62.5%;
+	// -webkit-text-size-adjust: 100%;
+	// -ms-text-size-adjust: 100%;
+	// box-sizing: border-box;
+	background-color: none;
+
+}
+
+*,
+*:before,
+*:after {
+
+	// box-sizing: inherit;
+
+}
+
+body {
+
+	// margin: 0;
+	// @include font-size(14);
+	// line-height: 1.571428571; // 22px, 22/14
+	// @include open-sans-regular;
+	// color: $gray;
+	background-color: $white;
+	-webkit-font-smoothing: antialiased;
+
+}
+
+// Block Level
+
+h1 {
+
+	// margin: 1em 0; // 14px, 14/14
+	// @include font-size(34);
+	// @include open-sans-bold;
+
+}
+
+h2 {
+
+	// margin: 1em 0; // 14px, 14/14
+	// @include font-size(30);
+	// @include open-sans-bold;
+
+}
+
+h3 {
+
+	// margin: 1em 0; // 14px, 14/14
+	// @include font-size(26);
+	// @include open-sans-bold;
+
+}
+
+h4 {
+
+	// margin: 1em 0; // 14px, 14/14
+	// @include font-size(22);
+	// @include open-sans-bold;
+
+}
+
+h5 {
+
+	// margin: 1em 0; // 14px, 14/14
+	// @include font-size(18);
+	// @include open-sans-bold;
+
+}
+
+h6 {
+
+	// margin: 1em 0; // 14px, 14/14
+	// @include font-size(14);
+	// @include open-sans-bold;
+
+}
+
+p {
+
+	// margin: 1em 0;
+
+}
+
+ol {
+
+	// margin: 1em 0;
+	// padding-left: 1.5em; // 21px, 21/14
+	// list-style-type: decimal;
+
+}
+
+ul {
+
+	// margin: 1em 0;
+	// padding-left: 1.285714286em; // 18px, 18/14
+	// list-style-type: square;
+
+}
+
+	li {}
+
+dl {
+
+	// margin: 1em 0;
+
+}
+
+	dt {}
+
+	dd {}
+
+table {}
+
+	thead {}
+
+		th {}
+
+	tbody {}
+
+		tr {}
+
+			td {}
+
+	tfoot {}
+
+article {}
+
+caption {}
+
+figure {}
+
+	figcaption {}
+
+blockquote {}
+
+// Inline
+
+em,
+i {
+
+	// @include open-sans-regular-italic;
+
+}
+
+b,
+strong {
+
+	// @include open-sans-bold;
+
+}
+
+cite {}
+
+a {
+
+	// color: $blue;
+	// text-decoration: none;
+
+	&:link {}
+
+	&:hover,
+	&:focus {
+
+		// text-decoration: underline;
+
+	}
+
+}
+
+img {
+
+	// display: block;
+	// max-width: 100%;
+	// box-sizing: content-box;
+
+}
+
+svg {
+
+	// display: block;
+	// box-sizing: content-box;
+
+}
+
+iframe {
+
+	// display: block;
+	// width: 100%;
+	// max-width: 100%;
+	// box-sizing: content-box;
+
+}
+
+code {}
+
+sub,
+sup {}
+
+ins {}
+
+mark {}
+
+::-moz-selection {}
+
+::selection {}
+
+input:-moz-placeholder {}
+
+textarea:-moz-placeholder {}
+
+// Forms
+
+form {}
+
+	fieldset {
+
+		// margin: 0;
+		// padding: 0;
+		// border: none;
+
+	}
+
+		legend {
+
+			// display: block;
+			// margin: 0 0 10px 0;
+			// @include font-size(14);
+			// line-height: 1.571428571; // 22px, 22/14
+			// @include open-sans-bold;
+			// text-transform: uppercase
+
+		}
+
+		label {
+
+			// display: block;
+			// margin: 0 0 0.714285714em 0; // 10px, 10/14
+			// @include font-size(14);
+			// line-height: 1.571428571; // 22px, 22/14
+			// @include open-sans-regular;
+			// text-transform: uppercase;
+			// cursor: pointer;
+
+		}
+
+		input {
+
+			&[type="text"],
+			&[type="search"],
+			&[type="email"],
+			&[type="tel"],
+			&[type="password"] {
+
+				// Override general styles applied to browsers in iOS.
+
+				// -webkit-appearance: none;
+
+				// display: block;
+				// width: 100%;
+				// padding: 5px 10px;
+				// @include font-size(14);
+				// line-height: 1.571428571; // 22px, 22/14
+				// @include open-sans-regular;
+				// color: $gray;
+				// border: 1px solid $gray;
+				// border-radius: 0;
+
+			}
+
+			&[type="checkbox"] {
+
+				// position: relative;
+				// top: -3px;
+				// margin: 0 7px 0 0;
+
+			}
+
+			&[type="radio"] {
+
+				// position: relative;
+				// top: -4px;
+				// margin: 0 5px 0 0;
+
+			}
+
+			&[type="button"],
+			&[type="submit"] {
+
+				// Override general styles applied to browsers in iOS.
+
+				// -webkit-appearance: none;
+
+				// display: block;
+				// width: 100%;
+				// padding: 20px 25px;
+				// @include font-size(14);
+				// line-height: 1.571428571; // 22px, 22/14
+				// @include open-sans-bold;
+				// text-transform: uppercase;
+				// text-align: center;
+				// color: $white;
+				// background: $blue;
+				// border: none;
+				// border-radius: 0;
+				// cursor: pointer;
+
+				&:hover,
+				&:focus {}
+
+			}
+
+		}
+
+		textarea {
+
+			// Override general styles applied to browsers in iOS.
+
+			// -webkit-appearance: none;
+
+			// display: block;
+			// width: 100%;
+			// max-width: 100%;
+			// padding: 8px 10px;
+			// @include font-size(14);
+			// line-height: 1.571428571; // 22px, 22/14
+			// @include open-sans-regular;
+			// color: $gray;
+			// border: 1px solid $gray;
+			// border-radius: 0;
+
+		}
+
+		button {
+
+			// Override general styles applied to browsers in iOS.
+
+			// -webkit-appearance: none;
+
+			// display: block;
+			// width: 100%;
+			// padding: 20px 25px;
+			// @include font-size(14);
+			// line-height: 1.571428571; // 22px, 22/14
+			// @include open-sans-bold;
+			// text-transform: uppercase;
+			// text-align: center;
+			// color: $white;
+			// background: $blue;
+			// border: none;
+			// border-radius: 0;
+			// cursor: pointer;
+
+			&:hover,
+			&:focus {}
+
+		}

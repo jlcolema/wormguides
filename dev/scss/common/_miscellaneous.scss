@@ -14,7 +14,24 @@
 
 #scroll-top-link {
 
-	.avia_hidden_link_text {}
+	border: none;
+	background-color: $gray;
+	border-radius: 0;
+	opacitiy: 1;
+
+	.avia_hidden_link_text {
+
+		color: $white;
+
+	}
+
+	&:hover {
+
+		color: $white;
+		background-color: darken($gray, 10%);
+		border: none;
+
+	}
 
 }
 

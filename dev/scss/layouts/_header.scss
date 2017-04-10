@@ -4,27 +4,106 @@
 
 // Notes...
 
-#advanced_menu_hide {}
+#advanced_menu_hide {
+
+	top: 73px;
+	right: 7.5%;
+	width: 40px;
+	height: 40px;
+	// margin-top: -20px;
+	color: $white;
+	line-height: 40px;
+	background-color: $primary-color-dark;
+	border: none;
+	border-radius: 0;
+
+	&:hover {
+
+		background-color: $primary-color-darker !important;
+
+	}
+
+}
 
 #mobile-advanced {
 
-	li {}
+	padding: 140px 7.5%;
+	background: $primary-color;
+	border: none;
+	transform: none;
+
+	li {
+
+		// font-family: "Open Sans";
+		font-weight: bold;
+		text-transform: uppercase;
+
+	}
 
 		a {
 
-			&:hover {}
+			padding: 10px 15px;
+			color: $white;
+			border: none !important;
+			background-color: $primary-color-dark;
+
+			&:before {
+
+				content: none !important;
+
+			}
+
+			&:hover {
+
+				background-color: $primary-color-darker !important;
+
+			}
 
 		}
 
+	.current-menu-item {
+
+		a {
+
+			background-color: $primary-color-darker !important;
+
+		}
+
+	}
+
 		.sub-menu {
 
-			li {}
+			background-color: $primary-color-light;
+
+			li {
+
+				font-weight: normal;
+				text-transform: none;
+
+			}
 
 				a {
 
-					&:hover {}
+					padding: 10px 15px;
+					background-color: $primary-color !important;
+
+					&:hover {
+
+						background-color: $primary-color-light !important;
+
+					}
 
 				}
+
+			.current-menu-item {
+
+				a {
+
+					background-color: $primary-color-light !important;
+
+				}
+
+			}
 
 		}
 
@@ -55,11 +134,18 @@
 				.logo {
 
 					position: absolute;
-					left: 0;
+					left: -9px;
 					top: 20px;
 					float: none;
 					height: auto;
 					z-index: 1;
+
+					@include mobile {
+
+						display: block;
+						height: auto !important;
+
+					}
 
 					a {
 
@@ -67,13 +153,30 @@
 
 					}
 
-						img {}
+						img {
+
+							max-height: none;
+
+						}
 
 				}
 
 				#advanced_menu_toggle {
 
-					&:hover {}
+					width: 40px;
+					height: 40px;
+					margin-top: -20px;
+					color: $white;
+					line-height: 40px;
+					background-color: $primary-color;
+					border: none;
+					border-radius: 0;
+
+					&:hover {
+
+						background-color: $primary-color-dark;
+
+					}
 
 				}
 
@@ -85,7 +188,6 @@
 
 			background: $primary-color;
 			background: linear-gradient(to bottom, $primary-color-light 0%, $primary-color 100%);
-
 			border: none;
 
 			.container {}
@@ -102,10 +204,16 @@
 
 							li {
 
-								width: 16.666666667%;
+								// width: 16.666666667%;
 								text-align: center;
 								text-transform: uppercase;
 								border-right: 1px solid $primary-color-light;
+
+								@media screen and (min-width: 960px) {
+
+									// width: 16.666666667%;
+
+								}
 
 								&:first-of-type {
 
@@ -113,7 +221,59 @@
 
 								}
 
-								&:last-of-type {}
+								// Resources
+
+								&:nth-child(1) {
+
+									width: 16%;
+
+								}
+
+								// Technologies
+
+								&:nth-child(2) {
+
+									width: 20%;
+
+								}
+
+								// News
+
+								&:nth-child(3) {
+
+									width: 13%;
+
+								}
+
+								// Publications
+
+								&:nth-child(4) {
+
+									width: 19%;
+
+								}
+
+								// People
+
+								&:nth-child(5) {
+
+									width: 14%;
+
+								}
+
+								// Get Involved
+
+								&:nth-child(6) {
+
+									width: 18%;
+
+								}
+
+								&:last-of-type {
+
+									// width: 16%;
+
+								}
 
 								&:hover > a {
 
@@ -126,6 +286,20 @@
 								a {
 
 									color: $white;
+
+									@media screen and (min-width: 800px) {
+
+										// padding-left: 20px;
+										// padding-right: 20px;
+
+									}
+
+									@media screen and (min-width: 960px) {
+
+										padding-left: 10px;
+										padding-right: 10px;
+
+									}
 
 									&:hover {}
 
@@ -167,7 +341,7 @@
 
 											&:hover {
 
-												background: lighten($primary-color-lighter, 25%);
+												background: lighten($gray, 25%);
 
 											}
 
@@ -177,8 +351,7 @@
 
 										a {
 
-											color: $white;
-											background: $primary-color-lighter;
+											background: lighten($gray, 15%);
 
 											&:hover {}
 
@@ -253,6 +426,12 @@
 
 		.global-search {
 
+			@include mobile {
+
+				display: none;
+
+			}
+
 			.container {
 
 				height: auto;
@@ -281,7 +460,18 @@
 
 						}
 
-							#searchsubmit {}
+							#searchsubmit {
+
+								// background-color: $gray;
+
+								&:focus,
+								&:hover {
+
+									background-color: $primary-color-dark;
+
+								}
+
+							}
 
 							#s {
 

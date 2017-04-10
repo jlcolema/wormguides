@@ -117,13 +117,13 @@ add_filter('upload_mimes', 'my_myme_types', 1, 1);
 			'colorset-main_color-bg2'               => '#f8f8f8',
 
 			// Primary color
-			'colorset-main_color-primary'           => '#000000',
+			'colorset-main_color-primary'           => '#2e9941',
 
 			// Highlight color
-			'colorset-main_color-secondary'         => '#9cc3df',
+			'colorset-main_color-secondary'         => '#7bcd89',
 
 			// Font color
-			'colorset-main_color-color'             => '#b0b0b0',
+			'colorset-main_color-color'             => '#333333',
 
 			// Secondary font color
 			'colorset-main_color-meta'              => '#919191',
