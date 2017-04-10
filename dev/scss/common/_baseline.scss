@@ -211,7 +211,11 @@ mark {}
 
 ::-moz-selection {}
 
-::selection {}
+::selection {
+
+	background: $secondary-color-alternate-light;
+
+}
 
 input:-moz-placeholder {}
 

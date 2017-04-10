@@ -6,20 +6,53 @@
 
 #footer {
 
+	padding: 50px 0;
 	background: #333333;
 	border: none;
 
 	.container {}
 
-		.flex-column {}
+		.flex_column {
+
+			margin-top: 0 !important;
+			margin-bottom: 0 !important;
+
+		}
+
+		.av_one_third {}
 
 			// Default widget
 
-			.widget {}
+			.widget {
 
-				.widgettitle {}
+				margin-top: 0;
+				margin-bottom: 0;
+				font-size: 14px;
 
-				.seperator {}
+				&:last-of-type {
+
+					// margin: 0;
+
+				}
+
+			}
+
+				.widgettitle {
+
+					margin: 0 0 20px 0;
+					// padding: 0 0 20px 0;
+					font-size: 18px;
+					font-weight: normal;
+					color: darken($gray, 25%);
+					// border-bottom: 1px solid darken($gray, 25%);
+
+				}
+
+				.seperator {
+
+					display: none;
+
+				}
 
 			// Text-based widget
 
@@ -31,38 +64,28 @@
 
 			// Categories Widget
 
-			.widget_categories {
+			.widget_nav_menu {
 
-				ul {}
+				.widgettitle {}
 
-					li {}
+				.menu-main-menu-container {}
 
-						a {
+					ul {}
 
-							&:hover {}
+						li {}
 
-						}
+							a {
 
-			}
+								&:hover {}
 
-			// Archive Widget
+							}
 
-			.widget_archive {
+							.sub-menu {
 
-				ul {}
+								display: none !important;
 
-					li {}
-
-						a {
-
-							&:hover {}
-
-						}
+							}
 
 			}
-
-		.av_one_fourth {}
-
-		.first {}
 
 }
