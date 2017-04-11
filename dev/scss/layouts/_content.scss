@@ -796,13 +796,42 @@
 
 						// Members (Grid)
 
+						// Quick fix for People page
+
+						.page-id-63 & .av_one_full {
+
+							overflow: hidden;
+
+						}
+
 						// Sorting
 
 						.sort_width_container {
 
-							.js_sort_items {}
+							margin: 0;
+							padding: 15px 20px;
+							background-color: $light-gray;
+							border-bottom: 1px solid lighten($gray, 20%);
 
-								.sort_by_cat {}
+							#js_sort_items {
+
+								background-color: transparent;
+
+							}
+
+								.sort_by_cat {
+
+									&:before {
+
+										content: "Filter:";
+										float: left;
+										margin: 0 10px 0 0;
+										font-weight: bold;
+										text-transform: uppercase;
+
+									}
+
+								}
 
 									a {
 
@@ -818,6 +847,14 @@
 
 										}
 
+									.active_sort {
+
+										font-weight: bold;
+
+										&:hover {}
+
+									}
+
 									.text-sep {}
 
 						}
@@ -826,9 +863,11 @@
 
 						.grid-sort-container {
 
+							width: calc(100% + 20px);
+
 							.grid-entry {
 
-								margin: 40px 0 0 0;
+								margin: 40px 0 0 0 !important;
 								padding: 0 20px 0 0;
 
 							}
