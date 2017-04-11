@@ -579,17 +579,32 @@
 
 								.av-magazine-hero {
 
-									.av-magazine-entry {}
+									.av-magazine-entry {
+
+										margin: 0;
+
+									}
 
 										.av-magazine-thumbnail {
 
+											margin: 0 0 15px 0;
+											padding: 0;
+											border: none;
+											border-radius: 0;
+
 											a {
+
+												display: block;
 
 												&:hover {}
 
 											}
 
-												img {}
+												img {
+
+													margin: 0;
+
+												}
 
 												.image-overlay {}
 
@@ -597,15 +612,28 @@
 
 										}
 
-										.av-magazine-content-wrap {}
+										.av-magazine-content-wrap {
+
+											padding: 0;
+											border: none;
+
+										}
 
 											.entry-content-header {}
 
 												.av-magazine-time {}
 
-												.av-magazine-text-sep {}
+												.av-magazine-text-sep {
 
-												.av-magazine-author {}
+													display: none;
+
+												}
+
+												.av-magazine-author {
+
+													display: none;
+
+												}
 
 													.av-magazine-author-link {}
 
@@ -623,9 +651,17 @@
 
 												.av-magazine-title {
 
+													font-size: 36px;
+													line-height: 1.1;
+													font-weight: normal;
+
 													a {
 
-														&:hover {}
+														&:hover {
+
+															color: $primary-color;
+
+														}
 
 													}
 
@@ -645,11 +681,32 @@
 
 								}
 
-								.av-magazine-slideshow {
+								.av-magazine-sideshow {
 
-									.av-magazine-entry {}
+									margin: 30px 0 0 0;
+
+									.av-magazine-entry {
+
+										position: relative;
+										min-height: 141px;
+										margin: 0;
+										padding: 24px 0 20px 120px;
+										border-top: 1px solid lighten($gray, 25%);
+
+									}
 
 										.av-magazine-thumbnail {
+
+											position: absolute;
+											left: 0;
+											top: 20px;
+											float: none;
+											width: 100px;
+											height: 100px;
+											margin: 0;
+											padding: 0;
+											border: none;
+											z-index: 1;
 
 											a {
 
@@ -665,11 +722,21 @@
 
 										}
 
-										.av-magazine-content-wrap {}
+										.av-magazine-content-wrap {
+
+											border: none;
+
+										}
 
 											.entry-content-header {}
 
-												.av-magazine-time {}
+												.av-magazine-time {
+
+													display: block;
+													margin: 0 0 5px 0;
+													line-height: 1;
+
+												}
 
 												.av-magazine-text-sep {}
 
@@ -691,15 +758,27 @@
 
 												.av-magazine-title {
 
+													font-size: 18px;
+													line-height: 1.65;
+													font-weight: normal;
+
 													a {
 
-														&:hover {}
+														&:hover {
+
+															color: $primary-color;
+
+														}
 
 													}
 
 												}
 
 											.entry-content {
+
+												margin: 4px 0 0 0;
+												font-size: 14px;
+												line-height: 1.65;
 
 												a {
 
