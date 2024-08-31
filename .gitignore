@@ -1,11 +1,6 @@
 .DS_Store
-*.sublime-project
-*.sublime-workspace
-nodule_modules/
-dev/backup/
 dist/html/wp-content/uploads/
 node_modules/
-dist/html/wp-content/themes/enfold-child/style.css
 
 # Miscellaneous
 
